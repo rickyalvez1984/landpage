@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Institucional</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 15px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff6600;
+    }
+
+    .hero {
+      height: 80vh;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url("https://picsum.photos/1920/1080?grayscale") center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero a {
+      background: #ff6600;
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .hero a:hover {
+      background: #e65c00;
+    }
+
+    section {
+      padding: 50px 5%;
+    }
+
+    .sobre, .servicos {
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .servicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contato {
+      text-align: center;
+      background: #f1f1f1;
+      padding: 50px 5%;
+    }
+
+    .contato form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contato input, .contato textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .contato button {
+      padding: 12px;
+      background: #ff6600;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contato button:hover {
+      background: #e65c00;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Meu Projeto</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção Hero -->
+  <section class="hero">
+    <h2>Bem-vindo ao Futuro!</h2>
+    <p>Conheça nosso projeto inovador que vai transformar sua experiência digital.</p>
+    <a href="#contato">Quero Saber Mais</a>
+  </section>
+
+  <!-- Sobre -->
+  <section class="sobre" id="sobre">
+    <h2>Sobre o Projeto</h2>
+    <p>
+      Nosso projeto foi criado para simplificar processos, aumentar a produtividade e gerar resultados reais. 
+      Utilizamos tecnologia de ponta e estratégias inovadoras para atender às necessidades do público moderno.
+    </p>
+  </section>
+
+  <!-- Serviços -->
+  <section class="servicos" id="servicos">
+    <div class="card">
+      <h3>Inovação</h3>
+      <p>Soluções modernas e tecnológicas para os desafios atuais.</p>
+    </div>
+    <div class="card">
+      <h3>Agilidade</h3>
+      <p>Processos rápidos e eficientes que economizam tempo e recursos.</p>
+    </div>
+    <div class="card">
+      <h3>Resultados</h3>
+      <p>Foco em métricas reais que geram crescimento sustentável.</p>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contato" id="contato">
+    <h2>Entre em Contato</h2>
+    <form>
+      <input type="text" placeholder="Seu Nome" required>
+      <input type="email" placeholder="Seu Email" required>
+      <textarea rows="5" placeholder="Sua Mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Meu Projeto. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
